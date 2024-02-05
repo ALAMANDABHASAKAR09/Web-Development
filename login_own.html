@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="7.css">
+    <title>
+        LOGIN PAGE
+    </title>
+    <script>
+        function add() {
+            var user, pass;
+            user = document.getElementById("n1").value;
+            pass = document.getElementById("n2").value;
+            if ((user == pass) && (user != "" && pass != "")) {
+                window.open("web.html");
+            } else {
+                document.getElementById("n3").innerHTML = "Unsuccessful";
+            }
+        }
+    </script>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+            border-radius: 35px;
+            background-color: rgb(41, 92, 163);
+            height: 705px;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            padding: 20px 100px;
+        }
+        
+        img {
+            border-radius: 45px;
+        }
+        
+        input {
+            border-radius: 10px;
+            border: none;
+        }
+        
+        .fp {
+            padding-left: 90px;
+        }
+        
+        body {
+            margin-left: 50px;
+            margin-right: 140px;
+            background-image: ;
+        }
+        
+        #signup {
+            color: rgb(230, 232, 235)
+        }
+        
+        #submit-btn {
+            background-color: rgb(167, 219, 69);
+            border: none;
+            border-radius: 21px;
+            box-shadow: 0px 1px 8px rgb(148, 102, 102);
+            cursor: pointer;
+            color: white;
+            font-family: "Raleway SemiBold", sans-serif;
+            height: 42px;
+            margin: auto;
+            margin-top: 50px;
+            transition: 0.25s;
+            width: 153px;
+        }
+        
+        #submit-btn:hover {
+            box-shadow: 0px 1px 18px #24c64f;
+        }
+        
+        label {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        #card-title {
+            font-family: "Raleway Thin", sans-serif;
+            letter-spacing: 4px;
+            padding-bottom: 23px;
+            padding-top: 13px;
+            text-align: center;
+        }
+        
+        button {
+            background-color: lightseagreen;
+            border: none;
+            border-radius: 21px;
+            box-shadow: 0px 1px 8px rgb(148, 102, 102);
+            cursor: pointer;
+            color: white;
+            font-family: "Raleway SemiBold", sans-serif;
+            height: 42px;
+            margin: auto;
+            margin-top: 50px;
+            transition: 0.25s;
+            width: 153px;
+        }
+        
+        .fnt {
+            text-align: center;
+        }
+        
+        h2 {
+            size: 30px;
+        }
+        
+        header {
+            margin-left: 50px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div align="center">
+            <br>
+            <h2>LOGIN</h2>
+            <hr>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwWMJbZoZ26ZyYB8M-1e7OLBVUWXRLNSO6A&usqp=CAU" style="width: 45%">
+            <div class="container">
+                <br>
+                <form class="fnt">
+                    <label> Username </label> <input type="text" size="25px" placeholder="Username" id="n1">
+                    <br>
+                    <br>
+                    <label>Password</label> <input type="password" size="25px" placeholder="***********" id="n2">
+                    <br><br>
+                    <!--  <label class="recap">Re-Captcha</label> 
+                   <a href="login_own.html"> <img src="recaptcha-icon.svg" width="50px" height="50px"></a>-->
+                    <input type="checkbox"><label>Save Login info</label><br>
+                    <div align="right"><br>
+                        <header class="fp" id="signup">Forgot password ?</header>
+                    </div>
+                </form>
+                <a><input id="submit-btn" type="button" name="submit" value="LOGIN" onclick="add()"></a>
+                <br><br>
+                <a href="ree.html" id="signup"> Don't have account yet? </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="signup">
+        <a href="ree.html"><button align="center">Sign Up</button></a>
+        </div>-->
+    <p id="n3" id="signup">unsuccessful </p>
+</body>
+
+</html>
